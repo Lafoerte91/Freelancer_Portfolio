@@ -241,3 +241,50 @@ html, body {
   color: #fff;
 }
 
+/* project-page */
+.project-details {
+  width: 865px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details__cover {
+  margin-bottom: 40px;
+}
+
+.project-details__desc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: #171718;
+}
+.btn-outline {
+  display: inline-block;
+  width: 169px;
+  height: 48px;
+  outline: 1px solid #000000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #000;
+}
+
+.btn-outline img {
+  margin-right: 10px;
+}
+
