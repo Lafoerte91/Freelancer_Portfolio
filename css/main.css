@@ -8,6 +8,7 @@
 
 html, body {
   font-family: var(--font-family);
+
 }
 
 .container {
@@ -80,8 +81,9 @@ html, body {
   width: 64px;
   height: 3px;
   background: #5c62ec;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
+  width: 100%;
 }
 
 /* Header */
@@ -251,6 +253,8 @@ html, body {
 
 .project-details__cover {
   margin-bottom: 40px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
 .project-details__desc {
@@ -280,11 +284,64 @@ html, body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.01em;
-  text-align: center;
   color: #000;
+  transition: all 0.2s ease-in;
+}
+
+.btn-outline:hover {
+  opacity: 0.8;
+}
+
+.btn-outline:active {
+  position: relative; 
+  top: 1px;
 }
 
 .btn-outline img {
   margin-right: 10px;
 }
+
+/* content list */
+.content-list {
+  max-width: 570px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+}
+
+.content-list__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 20px;
+}
+.title-2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #171718;
+}
+
+.content-list p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #171718;
+}
+
+.section--skills {
+  min-height: 815px;
+}
+
+
+
 
