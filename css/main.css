@@ -53,6 +53,8 @@ html, body {
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
   align-items: center;
   column-gap: 40px;
   font-family: var(--second-family);
@@ -189,6 +191,7 @@ html, body {
 
 .projects {
   display: flex;
+  justify-content: center;
   column-gap: 30px;
   row-gap: 30px;
   flex-wrap: wrap;
@@ -341,6 +344,81 @@ html, body {
 .section--skills {
   min-height: 815px;
 }
+
+@media screen and (max-width:850px) {
+  .project-details {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .header {
+    min-height: unset;
+    padding: 40px 0;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__title strong {
+    font-size: 40px;
+  }
+
+  .section {
+    padding: 40px 0;
+    min-height: unset;
+  }
+
+  .title-1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .project__title {
+    font-size: 22px;
+  }
+
+  .footer {
+    padding: 40px 0 30px;
+  }
+
+  .social__item {
+    width: 28px;
+  }
+
+  .social {
+    margin-bottom: 20px;
+    column-gap: 20px;
+  }
+
+  .section--skills {
+    min-height: unset;
+  }
+
+  .title-2 {
+    font-size: 30px;
+  }
+
+  .content-list {
+    row-gap: 20px;
+  }
+
+  .content-list__item {
+    row-gap: 10px;
+  }
+
+  .content-list p {
+    font-size: 16px;
+  }
+
+  .project-details__desc {
+    row-gap: 20px;
+    font-size: 22px;
+  }
+
+}
+
 
 
 
