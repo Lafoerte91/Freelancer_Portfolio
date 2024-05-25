@@ -88,8 +88,21 @@ html, body {
   width: 100%;
 }
 
-/* Header */
+/* Dark Mode */
+.dark-mode-btn {
+  display: block;
+  width: 51px;
+  height: 26px;
+  border-radius: 50px;
+  background: #272727;
+  position: relative;
+}
 
+.dark-mode-btn__icon {
+}
+
+
+/* Header */
 .header {
   min-height: 695px;
   background-color: #171718;
