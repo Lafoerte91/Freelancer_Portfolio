@@ -4,11 +4,22 @@
 :root {
   --font-family: "DM Sans", sans-serif;
   --second-family: "Poppins", sans-serif;
+  --project-card-bg: #FFFFFF;
+  --project-car-text: #000;
+  --box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
 }
 
 html, body {
   font-family: var(--font-family);
+  min-height: 100vh;
+}
 
+.dark {
+  background-color:#252526;
+  color: #fff ;
+  --project-card-bg: #000;
+  --project-car-text: #fff;
+  --box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
 }
 
 .container {
@@ -235,11 +246,12 @@ html, body {
 
 .project {
   max-width: 370px;
-  background-color: #FFFFFF;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
+  background-color: var(--project-card-bg);
+  box-shadow: var(--box-shadow);
   border-radius: 10px;
   text-align: center;
   padding-bottom: 25px;
+
 }
 .project__img {
   border-radius: 10px;
@@ -251,7 +263,7 @@ html, body {
   font-size: 24px;
   line-height: 130%;
   letter-spacing: -0.02em;
-  color: #171718;
+  color: var(--project-car-text);
 }
 
 /* footer */
@@ -307,8 +319,8 @@ html, body {
   font-size: 24px;
   line-height: 130%;
   letter-spacing: -0.02em;
-  color: #171718;
 }
+
 .btn-outline {
   display: inline-block;
   width: 169px;
@@ -323,8 +335,8 @@ html, body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.01em;
-  color: #000;
   transition: all 0.2s ease-in;
+  background-color: #fff;
 }
 
 .btn-outline:hover {
@@ -364,7 +376,6 @@ html, body {
   line-height: 130%;
   letter-spacing: -0.01em;
   text-align: center;
-  color: #171718;
 }
 
 .content-list p {
@@ -374,7 +385,6 @@ html, body {
   line-height: 150%;
   letter-spacing: -0.03em;
   text-align: center;
-  color: #171718;
 }
 
 .section--skills {
@@ -463,7 +473,6 @@ html, body {
     row-gap: 20px;
     font-size: 22px;
   }
-
 }
 
 
